@@ -13,3 +13,7 @@ Sistema simulando uma plataforma de ensino.
 | Notificações Simples           | - Notificações por email sobre atualizações de cursos.                                        |
 
 
+
+## Modelo Entidade Relacionamento - MER
+
+[![Modelagem-Entidade-Relacionamento.png](https://i.postimg.cc/QCvBhwz5/Modelagem-Entidade-Relacionamento.png)](https://postimg.cc/K3rc5qxv)
