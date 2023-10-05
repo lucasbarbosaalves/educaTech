@@ -1,6 +1,6 @@
 package br.com.educatech.models;
 
-public class Aluno {
+public class Student {
     private Long id;
     private String name;
     private String email;
