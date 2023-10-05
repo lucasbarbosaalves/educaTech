@@ -17,3 +17,12 @@ Sistema simulando uma plataforma de ensino.
 ## Modelo Entidade Relacionamento - MER
 
 [![Modelagem-Entidade-Relacionamento.png](https://i.postimg.cc/QCvBhwz5/Modelagem-Entidade-Relacionamento.png)](https://postimg.cc/K3rc5qxv)
+
+## Telas da aplicação
+
+### Home
+<a href="https://ibb.co/Kw0rMMw"><img src="https://i.ibb.co/2NnkDDN/HOME.png" alt="HOME" border="0"></a>
+
+### Seção de cursos
+
+<a href="https://ibb.co/VSj3fj0"><img src="https://i.ibb.co/1qvbFvY/CURSOS.png" alt="CURSOS" border="0"></a>
