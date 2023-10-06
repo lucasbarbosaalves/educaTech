@@ -9,5 +9,9 @@
         <module name="educaTech" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="carstore" target="17" />
+      <module name="educatech" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

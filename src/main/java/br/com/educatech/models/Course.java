@@ -1,6 +1,6 @@
 package br.com.educatech.models;
 
-public class Curso {
+public class Course {
  private Long id;
  private String name;
  private String teacher;
