@@ -17,13 +17,17 @@ public class CreateStudentServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
+
         String studentName = req.getParameter("name");
         String studentEmail = req.getParameter("email");
         String studentPassword = req.getParameter("password");
 
-        System.out.println(studentName);
+        if (studentName.isEmpty() || studentEmail.isEmpty() || studentPassword.isEmpty()) {
+            resp.sendError(HttpServletResponse.SC_BAD_REQUEST, "Please provide all required fields");
+            return;
+        }
 
-        Student student = new Student(1L, studentName, studentEmail, studentPassword);
+        Student student = new Student(studentName, studentEmail, studentPassword);
 
         try {
             new StudentDao().create(student);
@@ -32,7 +36,7 @@ public class CreateStudentServlet extends HttpServlet {
             throw new RuntimeException(e);
         }
 
-        resp.sendRedirect("/find-all-students");
-
+        resp.setStatus(HttpServletResponse.SC_CREATED);
+        req.getRequestDispatcher("index.html").forward(req, resp);
     }
 }

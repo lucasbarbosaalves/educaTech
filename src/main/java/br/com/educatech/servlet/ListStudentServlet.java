@@ -23,5 +23,8 @@ public class ListStudentServlet extends HttpServlet {
         req.setAttribute("students", students);
 
         req.getRequestDispatcher("dashboard.jsp").forward(req, resp);
+
+        resp.setStatus(HttpServletResponse.SC_OK);
+
     }
 }

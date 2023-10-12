@@ -1,7 +1,7 @@
 package br.com.educatech.models;
 
 public class Student {
-    private Long id;
+    private Integer id;
     private String name;
     private String email;
     private String password;
@@ -9,15 +9,25 @@ public class Student {
     public Student() {
     }
 
-    public Student(Long id, String name, String email, String password) {
+    public Student( String name, String email, String password) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
+
+    public Student(Integer id, String name, String email, String password) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.password = password;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getEmail() {
