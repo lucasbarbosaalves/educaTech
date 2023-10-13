@@ -1,7 +1,6 @@
 # EducaTech - Platorma de ensino online
 
-Sistema simulando uma plataforma de ensino. 
-Projeto desenvolvido durante a disciplina de Projeto Integrador do Centro Universitário SENACSP.
+Sistema simulando uma plataforma de ensino.
 
 | Funcionalidades                | Descrição                                                                                      |
 |-------------------------------|------------------------------------------------------------------------------------------------|
