@@ -1,5 +1,6 @@
 package br.com.educatech.dao;
 
+import br.com.educatech.config.ConnectionPoolConfig;
 import br.com.educatech.models.Student;
 
 import java.sql.*;
@@ -15,8 +16,7 @@ public class StudentDao {
 
         try {
 
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
-
+            Connection connection = ConnectionPoolConfig.getConnection();
             System.out.println("success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL, Statement.RETURN_GENERATED_KEYS);
@@ -51,8 +51,7 @@ public class StudentDao {
         String SQL = "SELECT * FROM Student";
 
         try {
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
-
+            Connection connection = ConnectionPoolConfig.getConnection();
             System.out.println("success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL, Statement.RETURN_GENERATED_KEYS);
@@ -97,8 +96,7 @@ public class StudentDao {
 
 
         try {
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
-
+            Connection connection = ConnectionPoolConfig.getConnection();
             System.out.println("success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
@@ -126,8 +124,7 @@ public class StudentDao {
         String SQL = "DELETE FROM Student WHERE id = ?";
 
         try {
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
-
+            Connection connection = ConnectionPoolConfig.getConnection();
             System.out.println("success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
