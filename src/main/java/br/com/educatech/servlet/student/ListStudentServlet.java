@@ -1,4 +1,4 @@
-package br.com.educatech.servlet;
+package br.com.educatech.servlet.student;
 
 import br.com.educatech.models.Student;
 import br.com.educatech.dao.StudentDao;

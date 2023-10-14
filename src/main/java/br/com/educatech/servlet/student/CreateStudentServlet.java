@@ -1,4 +1,4 @@
-package br.com.educatech.servlet;
+package br.com.educatech.servlet.student;
 
 import br.com.educatech.models.Student;
 import br.com.educatech.dao.StudentDao;
@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet("/create")
+@WebServlet("/register")
 public class CreateStudentServlet extends HttpServlet {
 
     @Override
@@ -37,6 +37,7 @@ public class CreateStudentServlet extends HttpServlet {
         }
 
         resp.setStatus(HttpServletResponse.SC_CREATED);
-        req.getRequestDispatcher("index.html").forward(req, resp);
+
+        req.getRequestDispatcher("register.jsp").forward(req, resp);
     }
 }

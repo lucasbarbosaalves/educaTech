@@ -7,6 +7,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class StudentDao {
 
@@ -143,5 +144,30 @@ public class StudentDao {
             System.out.println("fail in database connection" + e.getMessage());
         }
 
+    }
+
+    public boolean verifyCredentials(Student user) {
+
+        String SQL = "SELECT * FROM STUDENT WHERE EMAIL = ? AND PASSWORD = ?";
+
+        try (Connection connection = ConnectionPoolConfig.getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement(SQL);
+
+            preparedStatement.setString(1, user.getEmail());
+            preparedStatement.setString(2, user.getPassword());
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            if (resultSet.next()) {
+                String password = resultSet.getString("password");
+                return password.equals(user.getPassword());
+            }
+
+            return false;
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+
+            return false;
+        }
     }
 }

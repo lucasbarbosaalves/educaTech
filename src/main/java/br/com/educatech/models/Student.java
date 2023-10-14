@@ -9,6 +9,7 @@ public class Student {
     public Student() {
     }
 
+
     public Student( String name, String email, String password) {
         this.name = name;
         this.email = email;
@@ -18,6 +19,11 @@ public class Student {
     public Student(Integer id, String name, String email, String password) {
         this.id = id;
         this.name = name;
+        this.email = email;
+        this.password = password;
+    }
+
+    public Student(String email, String password) {
         this.email = email;
         this.password = password;
     }

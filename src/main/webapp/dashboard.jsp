@@ -32,6 +32,7 @@
             </tr>
         </c:forEach>
     </table>
+    <button><a href="/logout">Logout</a></button>
 </div>
 </body>
 </html>
