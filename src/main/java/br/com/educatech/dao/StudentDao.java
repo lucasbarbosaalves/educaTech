@@ -13,7 +13,7 @@ public class StudentDao {
 
     public void create(Student student) throws SQLException {
 
-        String SQL = "INSERT INTO Student (name, email, password) VALUES (?, ?, ?)";
+        String SQL = "";
 
         try {
 
