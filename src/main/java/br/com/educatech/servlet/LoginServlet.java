@@ -26,7 +26,7 @@ public class LoginServlet extends HttpServlet {
         String username = req.getParameter("email");
         String password = req.getParameter("password");
 
-        Student user = new Student(username, password);
+        Student user = new Student();
 
         boolean isValidUser = new StudentDao().verifyCredentials(user);
 

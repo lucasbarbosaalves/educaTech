@@ -13,7 +13,7 @@ public class StudentDao {
 
     public void create(Student student) throws SQLException {
 
-        String SQL = "";
+        String SQL = "SELECT * FROM STUDENT WHERE EMAIL = ? AND PASSWORD = ?";
 
         try {
 

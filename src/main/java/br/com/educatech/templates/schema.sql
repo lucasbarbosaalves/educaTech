@@ -1,5 +1,5 @@
 CREATE TABLE COURSE (
-    id_course INT PRIMARY KEY,
+    id_course INTEGER AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255),
     duration INT,
     id_teacher INT,
