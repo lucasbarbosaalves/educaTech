@@ -35,3 +35,8 @@ Sistema simulando uma plataforma de ensino.
 
 <a href="https://ibb.co/MMs1zMy"><img src="https://i.ibb.co/D5tMB5P/tela-login-educatech.png" alt="tela-login-educatech" border="0"></a>
 
+### Área de cadastro
+
+<a href="https://ibb.co/4ff0S8J"><img src="https://i.ibb.co/X44G57V/tela-cadastro-educatech.png" alt="tela-cadastro-educatech" border="0"></a>
+
+
