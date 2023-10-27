@@ -33,7 +33,7 @@ Sistema simulando uma plataforma de ensino.
 
 ### Área de login
 
-<a href="https://ibb.co/MMs1zMy"><img src="https://i.ibb.co/D5tMB5P/tela-login-educatech.png" alt="tela-login-educatech" border="0"></a>
+<a href="https://ibb.co/BgZvLKP"><img src="https://i.ibb.co/9qTBn3v/tela-login-educatech1.png" alt="tela-login-educatech1" border="0"></a>
 
 ### Área de cadastro
 
