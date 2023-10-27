@@ -26,3 +26,7 @@ Sistema simulando uma plataforma de ensino.
 ### Seção de cursos
 
 <a href="https://ibb.co/VSj3fj0"><img src="https://i.ibb.co/1qvbFvY/CURSOS.png" alt="CURSOS" border="0"></a>
+
+### Área do curso
+
+<a href="https://ibb.co/xjGt0gb"><img src="https://i.ibb.co/Ph4vnWy/tela-video-educatech.png" alt="tela-video-educatech" border="0"></a>
