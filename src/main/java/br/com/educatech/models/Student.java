@@ -1,13 +1,39 @@
 package br.com.educatech.models;
 
 public class Student {
-    private Long id;
+    private Integer id;
     private String name;
     private String email;
     private String password;
 
-    public Long getId() {
+    public Student() {
+    }
+
+
+    public Student( String name, String email, String password) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
+
+    public Student(Integer id, String name, String email, String password) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
+
+    public Student(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
+
+    public Integer getId() {
         return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getEmail() {

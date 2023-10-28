@@ -4,6 +4,7 @@ public class Course {
  private Long id;
  private String name;
  private String teacher;
+ private Category category;
 
  public Long getId() {
   return id;

@@ -1,6 +1,6 @@
 package br.com.educatech.models;
 
-public class Categoria {
+public class Category {
 
     private Long id;
     private String name;
