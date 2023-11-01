@@ -1,28 +1,69 @@
 package br.com.educatech.models;
 
 public class Course {
- private Long id;
- private String name;
- private String teacher;
- private Category category;
+    private Long id;
+    private String name;
+    private String description;
+    private String teacher;
 
- public Long getId() {
-  return id;
- }
+    private Integer duration;
+    private Category category;
 
- public String getName() {
-  return name;
- }
+    public Course() {
+    }
 
- public void setName(String name) {
-  this.name = name;
- }
+    public Course(String name, String description, String teacher, Integer duration) {
+        this.name = name;
+        this.description = description;
+        this.teacher = teacher;
+        this.duration = duration;
+    }
 
- public String getTeacher() {
-  return teacher;
- }
+    public Long getId() {
+        return id;
+    }
 
- public void setTeacher(String teacher) {
-  this.teacher = teacher;
- }
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(String teacher) {
+        this.teacher = teacher;
+    }
+
+    public Integer getDuration() {
+        return duration;
+    }
+
+    public void setDuration(Integer duration) {
+        this.duration = duration;
+    }
+
+    public Category getCategory() {
+        return category;
+    }
+
+    public void setCategory(Category category) {
+        this.category = category;
+    }
 }
