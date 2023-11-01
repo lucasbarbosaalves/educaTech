@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet ("/update-student")
+@WebServlet ("/update")
 public class UpdateStudentServlet extends HttpServlet {
 
     @Override

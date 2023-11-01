@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet ("/delete-student")
+@WebServlet ("/delete")
 public class DeleteStudentServlet extends HttpServlet {
 
     @Override
