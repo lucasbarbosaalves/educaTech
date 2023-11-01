@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet ("/find-all-students")
+@WebServlet ("/students")
 public class ListStudentServlet extends HttpServlet {
 
 
@@ -22,7 +22,7 @@ public class ListStudentServlet extends HttpServlet {
 
         req.setAttribute("students", students);
 
-        req.getRequestDispatcher("dashboard.jsp").forward(req, resp);
+        req.getRequestDispatcher("courses.jsp").forward(req, resp);
 
         resp.setStatus(HttpServletResponse.SC_OK);
 

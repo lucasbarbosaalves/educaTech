@@ -58,7 +58,7 @@ public class StudentDao {
                 String email = resultSet.getString("email");
                 String password = resultSet.getString("password");
 
-                Student student = new Student(name, email, password);
+                Student student = new Student(id, name, email, password);
 
                 students.add(student);
             }
@@ -141,24 +141,40 @@ public class StudentDao {
 
         String SQL = "SELECT * FROM STUDENT WHERE EMAIL = ? AND PASSWORD = ?";
 
-        try (Connection connection = ConnectionPoolConfig.getConnection()) {
+        try {
+            Connection connection = ConnectionPoolConfig.getConnection();
+
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
             preparedStatement.setString(1, user.getEmail());
             preparedStatement.setString(2, user.getPassword());
-
             ResultSet resultSet = preparedStatement.executeQuery();
 
-            if (resultSet.next()) {
+            System.out.println("success in select username");
+
+            while (resultSet.next()) {
+
                 String password = resultSet.getString("password");
-                return password.equals(user.getPassword());
+
+                System.out.println("password from database: " + password);
+                System.out.println("password from user: " + user.getPassword());
+
+                if (password.equals(user.getPassword())) {
+                    return true;
+                }
             }
+            connection.close();
 
             return false;
+
         } catch (Exception e) {
+
             System.out.println("Error: " + e.getMessage());
 
             return false;
+
         }
+
     }
+
 }
