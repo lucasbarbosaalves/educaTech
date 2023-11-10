@@ -16,8 +16,7 @@ Sistema simulando uma plataforma de ensino.
 
 ## Modelo Entidade Relacionamento - MER
 
-[![Modelagem-Entidade-Relacionamento.png](https://i.postimg.cc/QCvBhwz5/Modelagem-Entidade-Relacionamento.png)](https://postimg.cc/K3rc5qxv)
-
+[![prototipo-final.png](https://i.postimg.cc/4xmKM57Z/prototipo-final.png)](https://postimg.cc/3kQJ02Fb)
 ## Telas da aplicação
 
 ### Home
