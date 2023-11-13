@@ -1,6 +1,7 @@
 package br.com.educatech.dao;
 
 import br.com.educatech.config.ConnectionPoolConfig;
+import br.com.educatech.models.Category;
 import br.com.educatech.models.Course;
 
 import java.sql.*;
@@ -26,11 +27,12 @@ public class CourseDao {
 
             while (resultSet.next()) {
                 String name = resultSet.getString("name");
+                Category category = Enum.valueOf(Category.class, resultSet.getString("category"));
                 String description = resultSet.getString("description");
                 String teacher = resultSet.getString("teacher");
                 Integer duration = resultSet.getInt("duration");
 
-                Course course = new Course(name, description, teacher, duration );
+                Course course = new Course(name, category, description, teacher, duration );
 
                 courses.add(course);
             }

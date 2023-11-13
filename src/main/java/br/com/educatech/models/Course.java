@@ -2,6 +2,8 @@ package br.com.educatech.models;
 
 public class Course {
     private Long id;
+
+
     private String name;
     private String description;
     private String teacher;
@@ -9,7 +11,21 @@ public class Course {
     private Integer duration;
     private Category category;
 
-    public Course() {
+    public Course(String name, Category category, String description, String teacher, Integer duration) {
+        this.name = name;
+        this.category = category;
+        this.description = description;
+        this.teacher = teacher;
+        this.duration = duration;
+    }
+
+    public Course(Long id, String name, String description, String teacher, Integer duration, Category category) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.teacher = teacher;
+        this.duration = duration;
+        this.category = category;
     }
 
     public Course(String name, String description, String teacher, Integer duration) {
