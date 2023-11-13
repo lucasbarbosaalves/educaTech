@@ -10,6 +10,11 @@
         <listener-class>org.h2.server.web.DbStarter</listener-class>
     </listener>
 
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
     <servlet>
         <servlet-name>H2Console</servlet-name>
         <servlet-class>org.h2.server.web.WebServlet</servlet-class>

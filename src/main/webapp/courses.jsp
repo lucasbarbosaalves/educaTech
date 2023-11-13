@@ -15,10 +15,11 @@
 <table class="table table-striped">
     <thead>
     <tr>
-        <th>Nome</th>
-        <th>Descricao</th>
-        <th>Duracao</th>
-        <th>Professor</th>
+        <th>CATEGORIA</th>
+        <th>NOME</th>
+        <th>DESCRICAO</th>
+        <th>DURACAO</th>
+        <th>PROFESSOR</th>
     </tr>
     </thead>
     <tbody>
@@ -29,6 +30,7 @@
             for (Course course : courses) {
     %>
     <tr>
+        <td><%= course.getCategory() %></td>
         <td><%= course.getName() %></td>
         <td><%= course.getDescription() %></td>
         <td><%= course.getDuration() %></td>
