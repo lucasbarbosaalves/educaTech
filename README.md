@@ -10,7 +10,6 @@ Sistema simulando uma plataforma de ensino.
 |                               | - Breve descrição de cada curso.                                                              |
 | Detalhes do Curso              | - Página de detalhes para cada curso.                                                         |
 |                               |                                             |
-| Notificações Simples           | - Notificações por email sobre atualizações de cursos.                                        |
 
 
 
