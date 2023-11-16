@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%@ page import="java.util.List" %>
+<%@ page import="br.com.educatech.models.Course" %>
+
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -110,7 +112,36 @@
                 <a href="#" class="botoes__ancora">Saiba mais</a>
             </div>
         </div>
-        <div class="card">
+        <% List<Curso> cursos = (List<Curso>) request.getAttribute("cursos");
+            if (cursos != null) {
+                for (Curso curso : cursos) { %>
+         
+                     <div class="card" name="courses">
+                         <div class="card__descricao">
+                             <div class="descricao">
+                                 <h3 class="descricao__titulo"><img src="img/Estrelinhas.svg" alt="icones de estrelinhas"></h3>
+                                 <h3 class="descricao__titulo" id="category"><%= curso.getCategory() %></h3>
+                                 <h2 class="descricao__titulo-livro" id="name"><%= curso.getName() %></h2>
+                                 <p class="descricao__texto" id="description"><%= curso.getDescription() %></p>
+                                 <p class="descricao__texto" id="teacher"><%= curso.getTeacher() %></p>
+                             </div>
+                             <img src="img/Perfil-escritora 1.png" alt="foto da escritora juliana agarikov" class="descricao__imagem">
+                         </div>
+         
+                         <div class="card__botoes">
+                             <ul class="botoes">
+                                 <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritar livro"></li>
+                                 <li class="botoes__item"><img src="img/Compras.svg" alt="adicionar no carrinho de compras"></li>
+                             </ul>
+                             <a href="#" class="botoes__ancora">Saiba mais</a>
+                         </div>
+                     </div>
+         
+                <% }
+            } else { %>
+                <p>Nenhum curso disponível.</p>
+            <% } %>
+        <!-- <div class="card">
             <div class="card__descricao">
                 <div class="descricao">
                     <h3 class="descricao__titulo"><img src="img/Estrelinhas.svg" alt="icones de estrelinhas"></h3>
@@ -128,26 +159,7 @@
                 </ul>
                 <a href="#" class="botoes__ancora">Saiba mais</a>
             </div>
-        </div>
-        <div class="card">
-            <div class="card__descricao">
-                <div class="descricao">
-                    <h3 class="descricao__titulo"><img src="img/Estrelinhas.svg" alt="icones de estrelinhas"></h3>
-                    <h3 class="descricao__titulo">Autora do Mês</h3>
-                    <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
-                    <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
-                </div>
-                <img src="img/Perfil-escritora 1.png" alt="foto da escritora juliana agarikov" class="descricao__imagem">
-            </div>
-
-            <div class="card__botoes">
-                <ul class="botoes">
-                    <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritar livro"></li>
-                    <li class="botoes__item"><img src="img/Compras.svg" alt="adicionar no carrinho de compras"></li>
-                </ul>
-                <a href="#" class="botoes__ancora">Saiba mais</a>
-            </div>
-        </div>
+        </div> -->
     </div>
     </section>
 
