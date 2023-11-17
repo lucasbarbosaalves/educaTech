@@ -20,7 +20,7 @@ public class CourseSevlet extends HttpServlet {
 
         req.setAttribute("courses", courses);
 
-        req.getRequestDispatcher("courses.jsp").forward(req, resp);
+        req.getRequestDispatcher("index.jsp").forward(req, resp);
 
         resp.setStatus(HttpServletResponse.SC_OK);
     }

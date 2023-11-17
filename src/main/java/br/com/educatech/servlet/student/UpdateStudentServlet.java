@@ -11,11 +11,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet ("/update")
+@WebServlet ("/edit")
 public class UpdateStudentServlet extends HttpServlet {
 
     @Override
-    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
             String id = req.getParameter("id");
             String name = req.getParameter("name");
@@ -37,6 +37,6 @@ public class UpdateStudentServlet extends HttpServlet {
             }
 
             resp.setStatus(HttpServletResponse.SC_OK);
-            resp.sendRedirect("index.html");
+            resp.sendRedirect("index.jsp");
     }
 }

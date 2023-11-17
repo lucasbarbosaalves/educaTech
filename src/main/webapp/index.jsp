@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+
 </head>
 
 <body>
@@ -61,7 +63,7 @@
         </ul>
 
         <div class="container">
-            <a href="/perfil.jsp" class="container__link">
+            <a href="/profile.jsp" class="container__link">
                 <p class="container__texto">Meu perfil</p>
             </a>
             <a href="/login.jsp" class="container__link">

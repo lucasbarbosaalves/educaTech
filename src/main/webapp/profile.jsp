@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,6 +18,10 @@
               ${requestScope.message}
           </c:if></span>
                 <div class="mb-3">
+                    <label for="name" class="form-label">Identificação</label>
+                    <input type="text" class="form-control" id="id" name="id" placeholder="ID">
+                </div>
+                <div class="mb-3">
                     <label for="name" class="form-label">Nome</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Digite seu nome">
                 </div>
@@ -33,7 +39,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Editar</button>
                 <a href="/" class="btn btn-primary ms-2">Voltar</a>
-                <button type="submit" class="btn btn-primary">Deletar</button>
+                <a href="/delete.jsp" class="btn btn-danger">Deletar conta</a>
             </form>
 
         </div>

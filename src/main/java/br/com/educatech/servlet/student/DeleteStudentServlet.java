@@ -14,7 +14,7 @@ import java.sql.SQLException;
 public class DeleteStudentServlet extends HttpServlet {
 
     @Override
-    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String id = req.getParameter("id");
 
@@ -31,7 +31,7 @@ public class DeleteStudentServlet extends HttpServlet {
         }
 
         resp.setStatus(HttpServletResponse.SC_NO_CONTENT);
-        resp.sendRedirect("index.html");
+        resp.sendRedirect("index.jsp");
 
     }
 }
