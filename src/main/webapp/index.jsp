@@ -1,5 +1,5 @@
-<%@ page import="java.util.List" %>
 <%@ page import="br.com.educatech.models.Course" %>
+<%@ page import="java.util.List" %>
 
 <html lang="pt-br">
 <head>
@@ -61,13 +61,13 @@
         </ul>
 
         <div class="container">
-            <a href="#" class="container__link">
+            <a href="/perfil.jsp" class="container__link">
                 <p class="container__texto">Meu perfil</p>
             </a>
-            <a href="#" class="container__link">
+            <a href="/login.jsp" class="container__link">
                 <p class="container__texto">Login</p>
             </a>
-            <a href="#" class="container__link">
+            <a href="/register.jsp" class="container__link">
                 <p class="container__texto">Cadastro</p>
             </a>
         </div>    
@@ -94,40 +94,27 @@
                 <a href="#" class="botoes__ancora">Todas as aulas</a>
             </div>
         </div>
-    </div>
-    </section>
 
     <section class="carrossel">
-        <h2 class="carrossel__titulo">FORMAÇÃO FRONT-END</h2>
+        <h2 class="carrossel__titulo">CURSOS DISPONIVEIS</h2>
         <div class="carrossel__container">
-        <div class="card">
-            <div class="card__descricao">
-                <div class="descricao">
-                    <h2 class="descricao__titulo-livro">Cursos HTML</h2>
-                </div>
-                <img src="img/Perfil-escritora 1.png" alt="foto da escritora juliana agarikov" class="descricao__imagem">
-            </div>
+        <%
+            List<Course> courses = (List<Course>) request.getAttribute("courses");
+            if (courses != null && !courses.isEmpty()) {
+                for (Course course : courses) { %>
 
-            <div class="card__botoes">
-                <a href="#" class="botoes__ancora">Saiba mais</a>
-            </div>
-        </div>
-        <% List<Course> cursos = (List<Course>) request.getAttribute("cursos");
-            if (cursos != null) {
-                for (Course curso : cursos) { %>
-         
                      <div class="card" name="courses">
                          <div class="card__descricao">
                              <div class="descricao">
-                                 <h3 class="descricao__titulo"><img src="img/Estrelinhas.svg" alt="icones de estrelinhas"></h3>
-                                 <h3 class="descricao__titulo" id="category"><%= curso.getCategory() %></h3>
-                                 <h2 class="descricao__titulo-livro" id="name"><%= curso.getName() %></h2>
-                                 <p class="descricao__texto" id="description"><%= curso.getDescription() %></p>
-                                 <p class="descricao__texto" id="teacher"><%= curso.getTeacher() %></p>
+<%--                                 <h3 class="descricao__titulo"><img src="img/Estrelinhas.svg" alt="icones de estrelinhas"></h3>--%>
+                                 <h3 class="descricao__titulo" id="name"><%= course.getName() %></h3>
+                                 <h2 class="descricao__titulo-livro" id="category"><%= course.getCategory() %></h2>
+                                 <p class="descricao__texto" id="description"><%= course.getDescription() %></p>
+                                 <p class="descricao__texto" id="teacher"><%= course.getTeacher() %></p>
                              </div>
                              <img src="img/Perfil-escritora 1.png" alt="foto da escritora juliana agarikov" class="descricao__imagem">
                          </div>
-         
+
                          <div class="card__botoes">
                              <ul class="botoes">
                                  <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritar livro"></li>
@@ -135,34 +122,14 @@
                              </ul>
                              <a href="#" class="botoes__ancora">Saiba mais</a>
                          </div>
-                     </div>mvn tomcat7:run
-         
+                     </div>
+
                 <% }
             } else { %>
                 <p>Nenhum curso disponível.</p>
             <% } %>
-        <!-- <div class="card">
-            <div class="card__descricao">
-                <div class="descricao">
-                    <h3 class="descricao__titulo"><img src="img/Estrelinhas.svg" alt="icones de estrelinhas"></h3>
-                    <h3 class="descricao__titulo">Autora do Mês</h3>
-                    <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
-                    <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
-                </div>
-                <img src="img/Perfil-escritora 1.png" alt="foto da escritora juliana agarikov" class="descricao__imagem">
-            </div>
-
-            <div class="card__botoes">
-                <ul class="botoes">
-                    <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritar livro"></li>
-                    <li class="botoes__item"><img src="img/Compras.svg" alt="adicionar no carrinho de compras"></li>
-                </ul>
-                <a href="#" class="botoes__ancora">Saiba mais</a>
-            </div>
-        </div> -->
     </div>
     </section>
-
     <section class="contato">
         <div class="contato__descricao">
             <h2 class="contato__titulo">Fique por dentro das novidades!</h2>

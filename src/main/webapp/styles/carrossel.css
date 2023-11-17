@@ -101,11 +101,15 @@
 
 }
 
+
+
 @media screen and (min-width: 1728px) {
     .carrossel__container {
         display: flex;
         margin: 0 20vw 3em 20vw;
         align-items: center;
+        flex-wrap: wrap;
+
     }
 
     .swiper-pagination {
@@ -126,10 +130,15 @@
 
     .descricao {
         margin-right: 2em;
+        margin-bottom: 2em;
     }
 
     .card {
-        width: 60%;
+        width: calc(33.33% - 20px); /* Calcula a largura para exibir 3 itens por linha com espaçamento entre eles */
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
         margin-left: 3em;
     }
 }

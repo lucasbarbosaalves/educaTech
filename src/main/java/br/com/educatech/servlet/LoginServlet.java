@@ -39,7 +39,7 @@ public class LoginServlet extends HttpServlet {
 
             req.getSession().setAttribute("loggedUser", email);
 
-            resp.sendRedirect("courses");
+            resp.sendRedirect("index");
 
         } else {
 
