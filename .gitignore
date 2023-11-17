@@ -1,3 +1,7 @@
 .idea
 target
 out
+.settings
+.vscode
+.project
+.classpath
