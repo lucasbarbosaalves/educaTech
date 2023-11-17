@@ -112,9 +112,9 @@
                 <a href="#" class="botoes__ancora">Saiba mais</a>
             </div>
         </div>
-        <% List<Curso> cursos = (List<Curso>) request.getAttribute("cursos");
+        <% List<Course> cursos = (List<Course>) request.getAttribute("cursos");
             if (cursos != null) {
-                for (Curso curso : cursos) { %>
+                for (Course curso : cursos) { %>
          
                      <div class="card" name="courses">
                          <div class="card__descricao">
@@ -135,7 +135,7 @@
                              </ul>
                              <a href="#" class="botoes__ancora">Saiba mais</a>
                          </div>
-                     </div>
+                     </div>mvn tomcat7:run
          
                 <% }
             } else { %>
