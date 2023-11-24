@@ -36,7 +36,7 @@
                     <a href="#" class="lista-menu__link">BACK-END</a>
                 </li>
             </ul>
-            <img src="img/Logo.svg" alt="Logo da Educatech" class="container__imagem">
+             <img src="img/Logo.svg" alt="Logo da Educatech" class="container__imagem">
             <h1 class="container__titulo"><b class="container__titulo--negrito">Educa</b>Tech</h1>
         </div>
 
@@ -58,12 +58,12 @@
                 </li>
             </ul>
 
-            <li class="opcoes__item"><a href="#" class="opcoes__link">Comunidade</a></li>
-            <li class="opcoes__item"><a href="#" class="opcoes__link">Meus cursos</a></li>
+            <li class="opcoes__item"><a href="http://sp.senac.br" class="opcoes__link">Comunidade</a></li>
+            <li class="opcoes__item"><a href="/courses" class="opcoes__link">Cursos</a></li>
         </ul>
 
         <div class="container">
-            <a href="/profile.jsp" class="container__link">
+            <img src="img/perfil.png" alt="icone de perfil"> <a href="/profile.jsp" class="container__imagem">
                 <p class="container__texto">Meu perfil</p>
             </a>
             <a href="/login.jsp" class="container__link">
@@ -93,7 +93,7 @@
             </div>
 
             <div class="card__botoes">
-                <a href="#" class="botoes__ancora">Todas as aulas</a>
+                <a href="/courses" class="botoes__ancora">Todas as aulas</a>
             </div>
         </div>
 
@@ -122,7 +122,7 @@
                                  <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritar livro"></li>
                                  <li class="botoes__item"><img src="img/Compras.svg" alt="adicionar no carrinho de compras"></li>
                              </ul>
-                             <a href="#" class="botoes__ancora">Saiba mais</a>
+                             <a href="/courses.jsp" class="botoes__ancora">Saiba mais</a>
                          </div>
                      </div>
 
@@ -135,7 +135,7 @@
     <section class="contato">
         <div class="contato__descricao">
             <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <p class="contato__texto">Atualizações de cursos em breve!</p>
         </div>    
         <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
     </section>
