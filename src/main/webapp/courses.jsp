@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<h1 class="text-center">Lista de Cursos</h1>
+<h1 class="text-center">Cursos</h1>
 
 <table class="table table-striped">
     <thead>

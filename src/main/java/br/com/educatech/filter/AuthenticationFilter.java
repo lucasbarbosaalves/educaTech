@@ -14,6 +14,8 @@ public class AuthenticationFilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 
+        servletRequest.setCharacterEncoding("UTF-8");
+
         HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
 
         if(isUserLoggedOn(httpServletRequest)) {

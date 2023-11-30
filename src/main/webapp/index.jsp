@@ -1,20 +1,22 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="br.com.educatech.models.Course" %>
 <%@ page import="java.util.List" %>
-
+<%--<%@ page contentType="text/html; charset=UTF-8" %>--%>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educatech</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles/header.css">
-
+    <style><%@include file="styles.css"%></style>
+    <style><%@include file="styles/header.css"%></style>
+    <style><%@include file="styles/banner.css"%></style>
+    <style><%@include file="styles/carrossel.css"%></style>
+    <style><%@include file="styles/topicos.css"%></style>
+    <style><%@include file="styles/contato.css"%></style>
 </head>
 
 <body>
@@ -36,7 +38,7 @@
                     <a href="#" class="lista-menu__link">BACK-END</a>
                 </li>
             </ul>
-             <img src="img/Logo.svg" alt="Logo da Educatech" class="container__imagem">
+             <img src="img/Logo.svg" alt="Logo da Educatech" class="container__imagem" />
             <h1 class="container__titulo"><b class="container__titulo--negrito">Educa</b>Tech</h1>
         </div>
 
@@ -89,7 +91,7 @@
                     <h3 class="descricao__titulo">A partir do zero : HTML e css...</h3>
                     <h2 class="descricao__titulo-livro">Continue de onde parou</h2>
                 </div>
-                <img src="img/Angular.svg" class="descricao__imagem">
+                <img src="/img/Angular.svg" class="descricao__imagem">
             </div>
 
             <div class="card__botoes">
@@ -136,7 +138,7 @@
         <div class="contato__descricao">
             <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
             <p class="contato__texto">Atualizações de cursos em breve!</p>
-        </div>    
+        </div>
         <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
     </section>
 
