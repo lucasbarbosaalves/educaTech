@@ -6,6 +6,12 @@
         <title>EducaTech</title>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <link href="styles/login.css" rel="stylesheet">
+        <style><%@include file="styles.css"%></style>
+        <style><%@include file="styles/login.css"%></style>
+        <style><%@include file="styles/banner.css"%></style>
+        <style><%@include file="styles/carrossel.css"%></style>
+        <style><%@include file="styles/topicos.css"%></style>
+        <style><%@include file="styles/contato.css"%></style>
     </head>
     <body>
         <div class="container mt-5">

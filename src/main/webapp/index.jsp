@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="br.com.educatech.models.Course" %>
 <%@ page import="java.util.List" %>
-<%--<%@ page contentType="text/html; charset=UTF-8" %>--%>
+<%@ page contentType="text/html; charset=UTF-8" %>
 <html lang="pt-br">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +38,7 @@
                     <a href="#" class="lista-menu__link">BACK-END</a>
                 </li>
             </ul>
-             <img src="img/Logo.svg" alt="Logo da Educatech" class="container__imagem" />
+             <img src="/img/Logo.svg" alt="Logo da Educatech" class="container__imagem" />
             <h1 class="container__titulo"><b class="container__titulo--negrito">Educa</b>Tech</h1>
         </div>
 
@@ -61,7 +61,7 @@
             </ul>
 
             <li class="opcoes__item"><a href="http://sp.senac.br" class="opcoes__link">Comunidade</a></li>
-            <li class="opcoes__item"><a href="/courses" class="opcoes__link">Cursos</a></li>
+            <li class="opcoes__item"><a href="/index" class="opcoes__link">Cursos</a></li>
         </ul>
 
         <div class="container">
@@ -121,10 +121,10 @@
 
                          <div class="card__botoes">
                              <ul class="botoes">
-                                 <li class="botoes__item"><img src="img/Favoritos.svg" alt="favoritar livro"></li>
+                                 <li class="botoes__item"><img src="./img/Favoritos.svg" alt="favoritar curso"></li>
                                  <li class="botoes__item"><img src="img/Compras.svg" alt="adicionar no carrinho de compras"></li>
                              </ul>
-                             <a href="/courses.jsp" class="botoes__ancora">Saiba mais</a>
+                             <a href="https://www.youtube.com/watch?v=xk4_1vDrzzo&t=39s" class="botoes__ancora">Saiba mais</a>
                          </div>
                      </div>
 
